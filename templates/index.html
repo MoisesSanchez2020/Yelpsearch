@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yelp Search</title>
+</head>
+<body>
+    <h1>Yelp Business Search</h1>
+    <form id="searchForm">
+        <input type="text" id="term" placeholder="Search Term (e.g., coffee)">
+        <input type="text" id="location" placeholder="Location (e.g., San Francisco)">
+        <button type="submit">Search</button>
+    </form>
+    <button id="exportButton">Export to Sheet</button>
+
+
+    <div id="results"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
